@@ -1,0 +1,39 @@
+{
+  "name": "pip-airtable",
+  "homepage": "https://github.com/bamboocreativenz/pip-airtable#readme",
+  "url": "https://github.com/bamboocreativenz/pip-airtable/issues",
+  "version": "1.0.0",
+  "description": "PIP Airtable",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "private": true,
+  "scripts": {
+    "tsc": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bamboocreativenz/pip-airtable.git"
+  },
+  "keywords": [
+    "bamboo",
+    "pip"
+  ],
+  "author": "agentlewis",
+  "bugs": {},
+  "files": [
+    "lib/"
+  ],
+  "devDependencies": {
+    "@types/lodash": "^4.14.159", 
+    "@types/validator": "^13.1.0",
+    "@types/yaml": "^1.9.7",
+    "ts-jest": "^26.3.0",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "validator": "^13.1.1",
+    "yaml": "^1.10.0",
+    "zod": "^1.11.0-alpha.6"
+  }
+}

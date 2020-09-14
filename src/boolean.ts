@@ -80,7 +80,7 @@ export const coerceBoolean = cond<any, boolean>([
   [isBooleanNumber, isBooleanNumber],
 ])
 
-export function coerceBooleanArrayString(v: string) {
+export function coerceBooleanArrayString(v: string): boolean[] {
   const update = String(v)
     .replace(/^\[+|\]+$/g, '')
     .replace(/\"/g, '')
@@ -92,7 +92,7 @@ export function coerceBooleanArrayString(v: string) {
   }
 }
 
-export function coerceBooleanArrayCsv(v: string) {
+export function coerceBooleanArrayCsv(v: string): boolean[] {
   return parseAndTrimCsv(v)[0].map((_v: string) => coerceBoolean(_v))
 }
 
